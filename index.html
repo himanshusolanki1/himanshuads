@@ -90,7 +90,7 @@
             </h1>
     
             <!-- 5. Primary CTA Button -->
-            <a href="https://t.me/+ivVmOeKGtKowNWNl"
+            <a href="https://t.me/+_3v8q8guVFc5OWU9"
                target="_blank"
                id="joinButton"
                class="cta-button bg-telegram-blue text-white font-extrabold py-4 px-6 rounded-xl text-xl uppercase tracking-wider mb-8 w-full flex items-center justify-center space-x-3">
@@ -129,7 +129,8 @@
         const countdownContainer = document.getElementById('countdown-timer');
         const timerMessage = document.getElementById('timer-message');
         const joinButton = document.getElementById('joinButton');
-        const telegramUrl = joinButton.href; // Get the target URL from the button
+        // NOTE: The JavaScript automatically pulls the URL from the joinButton element's href.
+        const telegramUrl = joinButton.href; 
         
         // Initial duration in seconds (5 seconds as requested)
         const initialDuration = 5; 
