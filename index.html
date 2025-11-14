@@ -8,190 +8,135 @@
     
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- META PIXEL CODE -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'legend-green': '#10b981', /* Bright Green */
-                        'legend-red': '#ef4444',   /* Strong Red */
-                        'bg-dark': '#1f2937',      /* Dark Grey/Blue background */
-                    }
-                }
-            }
-        }
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '803920772553128');
+        fbq('track', 'PageView');
     </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=803920772553128&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- END META PIXEL -->
+
     <style>
-        /* Import a bold, clean font suitable for a trading/success theme (Inter is still great, but let's go bolder) */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #262626; /* Darker body background */
-        }
-        
-        /* The main card background is black/dark grey */
-        .main-card {
-            background-color: #000000;
+            background: #ffffff; 
         }
 
-        /* Styling for the main CTA button */
+        .logo-ring {
+            border-radius: 50%;
+            border: 4px solid #10b981;
+            box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+        }
+
         .cta-button-main {
             transition: all 0.2s ease-in-out;
-            box-shadow: 0 5px 25px rgba(16, 185, 129, 0.6); /* Green shadow */
         }
         .cta-button-main:hover {
-            box-shadow: 0 8px 30px rgba(16, 185, 129, 0.9);
-            transform: translateY(-2px);
+            transform: scale(1.03);
         }
 
-        /* Countdown container */
-        .countdown-box {
-            background-color: #000000; /* Black background for contrast */
-        }
         .countdown-number {
-            font-family: 'Inter', sans-serif;
             font-weight: 900;
-            line-height: 1;
-            text-shadow: 0 0 10px rgba(239, 68, 68, 0.8); /* Red neon effect */
-        }
-        
-        /* Custom image container for the round logo look */
-        .logo-container {
-            border-radius: 50%;
-            border: 4px solid #10b981; /* Green border */
-            box-shadow: 0 0 15px rgba(16, 185, 129, 0.8); /* Green glow */
+            font-size: 42px;
+            color: #ef4444;
         }
     </style>
+
 </head>
-<body class="flex flex-col items-center justify-center min-h-screen p-4">
 
-    <!-- Meta Pixel Code (Kept for tracking) -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '803920772553128');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=803920772553128&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Meta Pixel Code -->
+<body class="flex flex-col items-center justify-start min-h-screen py-6 px-4">
 
-    <!-- Main Content Card (Dark Theme) -->
-    <div class="w-full max-w-sm mx-auto pt-6 pb-10 main-card text-white rounded-3xl shadow-2xl border border-gray-700">
-        
-        <!-- 1. Top Title -->
-        <h1 class="text-3xl font-extrabold text-legend-red mb-6 tracking-wider">
-            TRADER SUCCESS COMMUNITY
+    <div class="w-full max-w-md text-center">
+
+        <h1 class="text-2xl font-extrabold text-red-600">
+            #1 MOST PROFITABLE TRADER
         </h1>
 
-        <!-- 2. Logo Section -->
-        <div class="logo-container w-36 h-36 mx-auto mb-6 p-1 overflow-hidden">
-            <!-- Placeholder for the Trader Success Logo -->
-            <img src="https://placehold.co/128x128/059669/FFF?text=TRADER+SUCCESS" 
-                 alt="Trader Success Logo" 
-                 class="w-full h-full object-cover rounded-full"
-            />
+        <div class="w-44 h-44 mx-auto my-6 logo-ring overflow-hidden">
+            <img src="logo.png" class="w-full h-full object-cover" />
         </div>
-    
-        <!-- 3. Primary Headline -->
-        <h2 class="text-xl font-bold text-white px-4 mb-3">
-            INSTANT ACCESS TO THE
-        </h2>
-        <p class="text-3xl font-extrabold text-legend-red tracking-wider mb-8">
-            TRADER SUCCESS
+
+        <p class="text-lg font-semibold text-gray-700">
+            RECOVER YOUR LOSS IN BINARY WITH
         </p>
-    
-        <!-- 4. Primary CTA Button -->
+
+        <p class="text-2xl font-extrabold text-red-600 mt-1">
+            LEGEND BINARY TRADER
+        </p>
+
         <a href="https://t.me/+_3v8q8guVFc5OWU9"
            target="_blank"
            id="joinButton"
-           class="cta-button-main bg-legend-green text-white font-extrabold py-3 px-6 rounded-lg text-2xl uppercase tracking-wider w-11/12 mx-auto block hover:bg-green-600 transition duration-150 ease-in-out">
+           class="cta-button-main bg-green-500 text-white font-extrabold py-3 px-6 rounded-lg text-2xl uppercase tracking-wider w-full mt-6 block">
             JOIN NOW FREE
         </a>
 
-        <!-- 5. Daily Signals Text -->
-        <p class="text-lg font-semibold text-white mt-6 mb-2">
-            DAILY 10-15 SURESHOT SIGNALS
+        <p class="text-lg font-semibold text-gray-700 mt-6">
+            DAILY 10–15 SURESHOT SIGNALS
         </p>
-        <p class="text-xl font-extrabold text-legend-red mb-8">
-            GET 95 - 99% ACCURATE SIGNALS DAILY
+
+        <p class="text-xl font-extrabold text-red-600">
+            GET 95–99% ACCURATE SIGNALS DAILY
         </p>
-        
-        <!-- 6. Urgency and Countdown Timer (Visually set to 20 seconds) -->
-        <p class="text-3xl font-extrabold text-legend-red mb-4">
+
+        <p class="text-xl font-bold text-green-600 mt-2">
+            GET AI SIGNALS BOT
+        </p>
+
+        <p class="text-3xl font-extrabold text-red-600 mt-6">
             Hurry Up!
         </p>
-        
-        <div class="countdown-box flex justify-center space-x-4 mb-8">
-            <!-- Static Display to clearly show the 20-second window visually -->
+
+        <div class="flex justify-center space-x-8 mt-4">
             <div class="flex flex-col items-center">
-                <span id="hours" class="countdown-number text-5xl text-legend-red">00</span>
-                <span class="text-xs font-semibold text-gray-400 mt-1">HRS</span>
+                <span class="countdown-number" id="hours">00</span>
+                <span class="text-gray-600 text-xs">HRS</span>
             </div>
+
             <div class="flex flex-col items-center">
-                <span id="minutes" class="countdown-number text-5xl text-legend-red">00</span>
-                <span class="text-xs font-semibold text-gray-400 mt-1">MINS</span>
+                <span class="countdown-number" id="minutes">00</span>
+                <span class="text-gray-600 text-xs">MINS</span>
             </div>
+
             <div class="flex flex-col items-center">
-                <!-- Visually set to 20 seconds, but JS redirect is 5 seconds -->
-                <span id="seconds" class="countdown-number text-5xl text-legend-red">20</span>
-                <span class="text-xs font-semibold text-gray-400 mt-1">SECS</span>
+                <span class="countdown-number" id="seconds">20</span>
+                <span class="text-gray-600 text-xs">SECS</span>
             </div>
         </div>
-        
-        <!-- 7. AI Signal Bot CTA -->
-        <p class="text-xl font-bold text-legend-red tracking-wide uppercase px-4">
-            ACCESS FREE AI SIGNAL BOT
-        </p>
-        
+
     </div>
 
-    <!-- Footer with Policy Links Only (Minimalist) -->
-    <footer class="w-full max-w-sm mx-auto mt-6 text-center">
-        <div class="text-gray-500 text-xs">
-            <a href="#" class="underline hover:text-white">Privacy Policy</a> | 
-            <a href="#" class="underline hover:text-white">Terms of Service</a>
-        </div>
-    </footer>
-
-    <!-- JavaScript for 5-Second Automatic Redirection and Tracking -->
+    <!-- 5-second Auto Redirect -->
     <script>
-        // The URL the button points to
         const REDIRECT_URL = "https://t.me/+_3v8q8guVFc5OWU9";
-        // The actual time before automatic redirection occurs (5 seconds)
-        const REDIRECT_DELAY_MS = 5000; 
+        const REDIRECT_DELAY_MS = 5000;
 
         document.addEventListener('DOMContentLoaded', () => {
             const joinButton = document.getElementById('joinButton');
             
-            // 1. Automatic redirection after 5 seconds
-            // This is the functional redirect timer
-            const redirectTimer = setTimeout(() => {
-                console.log('5 seconds elapsed. Redirecting automatically...');
-                window.location.href = joinButton.href; 
+            const autoRedirect = setTimeout(() => {
+                window.location.href = joinButton.href;
             }, REDIRECT_DELAY_MS);
 
-            // 2. Tracking Script and Manual Click Logic 
             joinButton.addEventListener('click', () => {
-                // Prevent auto-redirect if they click manually
-                clearTimeout(redirectTimer); 
-                console.log('Manual click detected. Auto-redirect stopped. Firing Lead event.');
-                // Firing a 'Lead' event for Facebook Pixel on manual click
-                if (typeof fbq === 'function') {
-                    fbq('track', 'Lead'); 
-                }
+                clearTimeout(autoRedirect);
+                fbq('track', 'Lead');
             });
-            
-            // Note: The displayed countdown remains static at 20 seconds per user request.
         });
     </script>
+
 </body>
 </html>
-
