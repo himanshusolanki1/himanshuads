@@ -32,16 +32,15 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            /* Using a dark background to mimic the reference image's trading chart background */
-            background-color: #1a1a1a;
-            /* Simple placeholder background pattern for the chart look */
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="10" height="100" fill="%2322c55e"/><rect x="10" y="0" width="10" height="100" fill="%23ef4444"/><rect x="20" y="0" width="10" height="100" fill="%2322c55e"/><rect x="30" y="0" width="10" height="100" fill="%2322c55e"/><rect x="40" y="0" width="10" height="100" fill="%23ef4444"/><rect x="50" y="0" width="10" height="100" fill="%2322c55e"/><rect x="60" y="0" width="10" height="100" fill="%23ef4444"/><rect x="70" y="0" width="10" height="100" fill="%2322c55e"/><rect x="80" y="0" width="10" height="100" fill="%23ef4444"/><rect x="90" y="0" width="10" height="100" fill="%2322c55e"/></svg>');
+            /* Core background changed to White */
+            background-color: #ffffff;
+            /* Removed the chart background pattern */
             background-size: cover;
         }
 
         .main-card {
-            /* Mimicking the bright lime green panel from the image */
-            background-color: #ccff00; /* Bright Lime Green */
+            /* Inside background changed to Bright Yellow */
+            background-color: #fce303; 
             /* Adjusted padding to match the look */
             padding: 2.5rem 1.5rem 1.5rem 1.5rem;
         }
@@ -75,7 +74,8 @@
             border-radius: 50%;
             padding: 2px;
             font-size: 14px;
-            border: 2px solid #ccff00; /* Border color matching the card background */
+            /* Border color must match the new main-card background */
+            border: 2px solid #fce303; 
             z-index: 10;
         }
 
@@ -118,7 +118,8 @@
 
 </head>
 
-<body class="flex flex-col items-center justify-start min-h-screen py-10 px-4">
+<!-- With a white background, we need to add some vertical space (py-10) to center the card slightly -->
+<body class="flex flex-col items-center justify-start min-h-screen py-10 px-4 bg-white">
 
     <!-- Card Container -->
     <div class="w-full max-w-sm rounded-xl overflow-visible text-center main-card shadow-2xl">
@@ -182,7 +183,8 @@
     <script>
         // Note: The REDIRECT_URL is taken from your existing button link.
         const REDIRECT_URL = "https://t.me/+_3v8q8guVFc5OWU9";
-        const REDIRECT_DELAY_MS = 5000; // Auto-redirect after 5 seconds
+        // Timer changed from 5000ms to 10000ms (10 seconds)
+        const REDIRECT_DELAY_MS = 10000; 
 
         document.addEventListener('DOMContentLoaded', () => {
             const joinButton = document.getElementById('joinButton');
